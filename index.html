@@ -1,97 +1,437 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Insapp - Aplikasi Tanpa Kode</title>
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/svg+xml" sizes="288x432" href="assets/img/Figma-Icon.svg">
-    <link rel="icon" type="image/svg+xml" sizes="288x432" href="assets/img/Figma-Icon.svg">
-    <link rel="icon" type="image/svg+xml" sizes="288x432" href="assets/img/Figma-Icon.svg">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="assets/css/Responsive-footer-1.css">
-    <link rel="stylesheet" href="assets/css/Responsive-footer.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
-</head>
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" sizes="288x432" href="assets/img/Figma-Icon.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="288x432" href="assets/img/Figma-Icon.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="288x432" href="assets/img/Figma-Icon.svg" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css" />
+    <link rel="stylesheet" href="assets/css/Responsive-footer-1.css" />
+    <link rel="stylesheet" href="assets/css/Responsive-footer.css" />
+    <link rel="stylesheet" href="assets/css/untitled.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link href="/Efendi/Kuliah/Semester 5/digital preneur/insapp-main/insapp-main/css/styles.css" rel="stylesheet" />
+  </head>
 
-<body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top flex-grow-1 flex-fill justify-content-around align-content-around portfolio-navbar gradient" style="background: rgb(242,247,230);">
-        <div class="container-fluid"><a class="navbar-brand text-end logo" href="#" style="color: rgb(0,0,0);font-weight: bold;text-shadow: 1px 1px rgba(89,89,89,0.67);margin: 0px;margin-left: 5px;"><i class="fa fa-mobile-phone"></i>Insapp</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav" style="color: var(--bs-blue);background: #000000;border-color: var(--bs-gray-dark);"><span class="text-dark visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon text-dark" style="color: rgb(0,0,0);"></span></button>
-            <div class="collapse navbar-collapse text-end d-xxl-flex align-items-end align-content-end justify-content-xxl-end" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" style="color: var(--bs-blue);"><i class="typcn typcn-book"></i>Overview</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects-grid-cards.html" style="color: var(--bs-blue);"><i class="icon ion-ios-pricetags-outline"></i>Langganan</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color: var(--bs-blue);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
-                                <path d="M17 20H22V18C22 16.3431 20.6569 15 19 15C18.0444 15 17.1931 15.4468 16.6438 16.1429M17 20H7M17 20V18C17 17.3438 16.8736 16.717 16.6438 16.1429M7 20H2V18C2 16.3431 3.34315 15 5 15C5.95561 15 6.80686 15.4468 7.35625 16.1429M7 20V18C7 17.3438 7.12642 16.717 7.35625 16.1429M7.35625 16.1429C8.0935 14.301 9.89482 13 12 13C14.1052 13 15.9065 14.301 16.6438 16.1429M15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7ZM21 10C21 11.1046 20.1046 12 19 12C17.8954 12 17 11.1046 17 10C17 8.89543 17.8954 8 19 8C20.1046 8 21 8.89543 21 10ZM7 10C7 11.1046 6.10457 12 5 12C3.89543 12 3 11.1046 3 10C3 8.89543 3.89543 8 5 8C6.10457 8 7 8.89543 7 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>Komunitas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="hire-me.html" style="color: var(--bs-blue);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
-                                <path d="M17 9H7V7H17V9Z" fill="currentColor"></path>
-                                <path d="M7 13H17V11H7V13Z" fill="currentColor"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 18V2H22V18H16V22H14C11.7909 22 10 20.2091 10 18H2ZM12 16V18C12 19.1046 12.8954 20 14 20V16H20V4H4V16H12Z" fill="currentColor"></path>
-                            </svg>Testimoni</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" style="color: var(--bs-blue);font-weight: bold;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-building-community">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8"></path>
-                                <line x1="13" y1="7" x2="13" y2="7.01"></line>
-                                <line x1="17" y1="7" x2="17" y2="7.01"></line>
-                                <line x1="17" y1="11" x2="17" y2="11.01"></line>
-                                <line x1="17" y1="15" x2="17" y2="15.01"></line>
-                            </svg>Tentang</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" style="color: var(--bs-blue);border-radius: 5px;border-style: solid;border-top-color: var(--bs-blue);border-right-color: var(--bs-indigo);border-bottom-width: 4px;border-bottom-color: var(--bs-blue);border-left-color: var(--bs-indigo);box-shadow: 2px 3px var(--bs-purple);">Mulai Sekarang - Gratis</a></li>
-                </ul>
-            </div>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top flex-grow-1 flex-fill justify-content-around align-content-around portfolio-navbar gradient" style="background: rgb(242, 247, 230)">
+      <div class="container-fluid">
+        <a class="navbar-brand text-end logo" href="#" style="color: rgb(0, 0, 0); font-weight: bold; text-shadow: 1px 1px rgba(89, 89, 89, 0.67); margin: 0px; margin-left: 5px"><i class="fa fa-mobile-phone"></i>Insapp</a
+        ><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav" style="color: var(--bs-blue); background: #000000; border-color: var(--bs-gray-dark)">
+          <span class="text-dark visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon text-dark" style="color: rgb(0, 0, 0)"></span>
+        </button>
+        <div class="collapse navbar-collapse text-end d-xxl-flex align-items-end align-content-end justify-content-xxl-end" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="color: var(--bs-blue)"><i class="typcn typcn-book"></i>Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects-grid-cards.html" style="color: var(--bs-blue)"><i class="icon ion-ios-pricetags-outline"></i>Langganan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: var(--bs-blue)"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M17 20H22V18C22 16.3431 20.6569 15 19 15C18.0444 15 17.1931 15.4468 16.6438 16.1429M17 20H7M17 20V18C17 17.3438 16.8736 16.717 16.6438 16.1429M7 20H2V18C2 16.3431 3.34315 15 5 15C5.95561 15 6.80686 15.4468 7.35625 16.1429M7 20V18C7 17.3438 7.12642 16.717 7.35625 16.1429M7.35625 16.1429C8.0935 14.301 9.89482 13 12 13C14.1052 13 15.9065 14.301 16.6438 16.1429M15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7ZM21 10C21 11.1046 20.1046 12 19 12C17.8954 12 17 11.1046 17 10C17 8.89543 17.8954 8 19 8C20.1046 8 21 8.89543 21 10ZM7 10C7 11.1046 6.10457 12 5 12C3.89543 12 3 11.1046 3 10C3 8.89543 3.89543 8 5 8C6.10457 8 7 8.89543 7 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path></svg
+                >Komunitas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hire-me.html" style="color: var(--bs-blue)"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                  <path d="M17 9H7V7H17V9Z" fill="currentColor"></path>
+                  <path d="M7 13H17V11H7V13Z" fill="currentColor"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 18V2H22V18H16V22H14C11.7909 22 10 20.2091 10 18H2ZM12 16V18C12 19.1046 12.8954 20 14 20V16H20V4H4V16H12Z" fill="currentColor"></path></svg
+                >Testimoni</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: var(--bs-blue); font-weight: bold"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icon-tabler-building-community"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8"></path>
+                  <line x1="13" y1="7" x2="13" y2="7.01"></line>
+                  <line x1="17" y1="7" x2="17" y2="7.01"></line>
+                  <line x1="17" y1="11" x2="17" y2="11.01"></line>
+                  <line x1="17" y1="15" x2="17" y2="15.01"></line></svg
+                >Tentang</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="
+                  color: var(--bs-blue);
+                  border-radius: 5px;
+                  border-style: solid;
+                  border-top-color: var(--bs-blue);
+                  border-right-color: var(--bs-indigo);
+                  border-bottom-width: 4px;
+                  border-bottom-color: var(--bs-blue);
+                  border-left-color: var(--bs-indigo);
+                  box-shadow: 2px 3px var(--bs-purple);
+                "
+                >Mulai Sekarang - Gratis</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <main class="page lanidng-page"></main>
-    <section class="portfolio-block website gradient" style="background: rgb(242,247,230);border-color: rgb(242,247,230);" title="Figma">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 col-lg-5 offset-lg-1 text-start text">
-                    <h2 class="display-4" style="font-family: Alata, sans-serif;color: var(--bs-blue);">Dari Desain Menjadi Aplikasi Android<i class="fa fa-android rubberBand animated infinite" style="color: rgb(0,166,36);margin-left: 17px;"></i></h2>
-                    <p style="color: var(--bs-blue);font-family: Alata, sans-serif;font-weight: bold;font-size: 24px;">Tempat terbaik untuk menciptakan rancangan lebih baik, validasi ide, hingga meluncurkan produk atau aplikasi jadi.</p>
-                    <h1 style="color: var(--bs-blue);font-size: 17px;font-family: Alata, sans-serif;font-weight: bold;margin-top: 28px;">Cocok dengan :<img class="img-fluid border-light" src="assets/img/Figma-Icon.svg" width="20"></h1><button class="btn btn-outline-primary active btn-lg border rounded-0 border-dark scale-on-hover" type="button" style="margin-top: 32px;background: linear-gradient(#f5bc86 17%, #f89c9c), rgba(14,160,255,0);font-family: Alata, sans-serif;font-weight: bold;font-size: 13px;color: rgb(0,0,0);box-shadow: 5px 4px var(--bs-purple);border-radius: 0px;border-right-color: var(--bs-indigo);border-bottom-color: rgb(17,127,238);border-left: 4px none var(--bs-red) ;">Buat Aplikasi Tanpa Kode Sekarang!</button>
-                </div>
-                <div class="col-md-12 col-lg-5">
-                    <div class="portfolio-laptop-mockup">
-                        <div class="screen">
-                            <div class="screen-content" style="background-image:url(&quot;assets/img/tech/image6.png&quot;);"></div>
-                        </div>
-                        <div class="keyboard"></div>
-                    </div>
-                </div>
+    <section class="portfolio-block website gradient" style="background: rgb(242, 247, 230); border-color: rgb(242, 247, 230)" title="Figma">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-5 offset-lg-1 text-start text">
+            <h2 class="display-4" style="font-family: Alata, sans-serif; color: var(--bs-blue)">
+              Dari Desain Menjadi Aplikasi Android<i class="fa fa-android rubberBand animated infinite" style="color: rgb(0, 166, 36); margin-left: 17px"></i>
+            </h2>
+            <p style="color: var(--bs-blue); font-family: Alata, sans-serif; font-weight: bold; font-size: 24px">Tempat terbaik untuk menciptakan rancangan lebih baik, validasi ide, hingga meluncurkan produk atau aplikasi jadi.</p>
+            <h1 style="color: var(--bs-blue); font-size: 17px; font-family: Alata, sans-serif; font-weight: bold; margin-top: 28px">Cocok dengan :<img class="img-fluid border-light" src="assets/img/Figma-Icon.svg" width="20" /></h1>
+            <button
+              class="btn btn-outline-primary active btn-lg border rounded-0 border-dark scale-on-hover"
+              type="button"
+              style="
+                margin-top: 32px;
+                background: linear-gradient(#f5bc86 17%, #f89c9c), rgba(14, 160, 255, 0);
+                font-family: Alata, sans-serif;
+                font-weight: bold;
+                font-size: 13px;
+                color: rgb(0, 0, 0);
+                box-shadow: 5px 4px var(--bs-purple);
+                border-radius: 0px;
+                border-right-color: var(--bs-indigo);
+                border-bottom-color: rgb(17, 127, 238);
+                border-left: 4px none var(--bs-red);
+              "
+            >
+              Buat Aplikasi Tanpa Kode Sekarang!
+            </button>
+          </div>
+          <div class="col-md-12 col-lg-5">
+            <div class="portfolio-laptop-mockup">
+              <div class="screen">
+                <div class="screen-content" style="background-image: url('assets/img/tech/image6.png')"></div>
+              </div>
+              <div class="keyboard"></div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <section>
-        <div style="background-color:rgba(58,47,47,0);background-image:url(&quot;assets/img/footer.png&quot;);background-size:cover;background-repeat:no-repeat;height:366px;">
-            <div class="container">
-                <h1 class="text-center" style="font-family: ABeeZee, sans-serif;font-size: 46px;color: rgb(0,0,0);margin-top: 37px;"><i class="icon ion-android-phone-portrait"></i>Insapp</h1>
-                <hr>
-                <ul class="list-inline" id="text_decoration" style="margin-top:30px;font-family:ABeeZee, sans-serif;">
-                    <li class="list-inline-item"><a class="decoration" style="color:rgb(0,0,0);font-size:20px;margin-right:10px;" href="#">Home</a></li>
-                    <li class="list-inline-item"><a style="font-size:20px;color:rgb(0,0,0);margin-right:10px;" href="#">Services</a></li>
-                    <li class="list-inline-item"><a style="font-size:20px;color:rgb(0,0,0);margin-right:10px;" href="#">About</a></li>
-                    <li class="list-inline-item"><a style="color:rgb(0,0,0);font-size:20px;margin-right:10px;" href="#">Terms</a></li>
-                    <li class="list-inline-item"><a style="color:rgb(0,0,0);font-size:20px;" href="#">Privacy Policy</a></li>
-                </ul>
-                <p class="text-center" style="margin-top:30px;margin-bottom:15px;"><a style="font-size:35px;margin-right:30px;" href="#"><i class="fa fa-facebook-square" style="color:rgb(0,0,0);margin-right:0px;"></i></a><a style="font-size:35px;margin-right:30px;" href="#"><i class="fa fa-instagram" style="color:rgb(0,0,0);margin-right:0px;"></i></a><a style="font-size:35px;margin-right:30px;" href="#"><i class="icon ion-social-twitter" style="color:rgb(0,0,0);margin-right:2px;"></i></a><a style="font-size:35px;margin-right:30px;" href="#"><i class="fa fa-github" style="color:rgb(0,0,0);margin-right:0px;"></i></a><a style="font-size:35px;" href="#"><i class="fa fa-google-plus-square" style="color:rgb(0,0,0);"></i></a></p>
-                <p class="text-center" style="color:rgb(193,184,184);font-family:ABeeZee, sans-serif;margin-bottom:23px;">Insapp Inc @ 2021</p>
+
+    <div id="generic_price_table">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!--PRICE HEADING START-->
+              <div class="price-heading clearfix">
+                <h1>choose your plan to build an app</h1>
+              </div>
+              <!--//PRICE HEADING END-->
             </div>
+          </div>
         </div>
+        <div class="container">
+          <!--BLOCK ROW START-->
+          <div class="row">
+            <div class="col-md-4">
+              <!--PRICE CONTENT START-->
+              <div class="generic_content clearfix">
+                <!--HEAD PRICE DETAIL START-->
+                <div class="generic_head_price clearfix">
+                  <!--HEAD CONTENT START-->
+                  <div class="generic_head_content clearfix">
+                    <!--HEAD START-->
+                    <div class="head_bg"></div>
+                    <div class="head">
+                      <span>Free</span>
+                    </div>
+                    <!--//HEAD END-->
+                  </div>
+                  <!--//HEAD CONTENT END-->
+
+                  <!--PRICE START-->
+                  <div class="generic_price_tag clearfix">
+                    <span class="price">
+                      <span class="sign">IDR</span>
+                      <span class="currency">0</span>
+                      <span class="month">/Free Forever👏</span>
+                    </span>
+                  </div>
+                  <!--//PRICE END-->
+                </div>
+                <!--//HEAD PRICE DETAIL END-->
+
+                <!--FEATURE LIST START-->
+                <div class="generic_feature_list">
+                  <ul>
+                    <li><span>Project:</span> Unlimited</li>
+                    <li><span>Collab:</span> 2 User</li>
+                    <li><span>Logo:</span> INSAPP</li>
+                    <li><span>Share:</span> 3 User</li>
+                    <li><span>Support:</span> 24/7</li>
+                  </ul>
+                </div>
+                <!--//FEATURE LIST END-->
+
+                <!--BUTTON START-->
+                <div class="generic_price_btn clearfix">
+                  <a class="" href="">Sign up</a>
+                </div>
+                <!--//BUTTON END-->
+              </div>
+              <!--//PRICE CONTENT END-->
+            </div>
+
+            <div class="col-md-4">
+              <!--PRICE CONTENT START-->
+              <div class="generic_content active clearfix">
+                <!--HEAD PRICE DETAIL START-->
+                <div class="generic_head_price clearfix">
+                  <!--HEAD CONTENT START-->
+                  <div class="generic_head_content clearfix">
+                    <!--HEAD START-->
+                    <div class="head_bg"></div>
+                    <div class="head">
+                      <span>Gold</span>
+                    </div>
+                    <!--//HEAD END-->
+                  </div>
+                  <!--//HEAD CONTENT END-->
+
+                  <!--PRICE START-->
+                  <div class="generic_price_tag clearfix">
+                    <span class="price">
+                      <span class="sign">IDR</span>
+                      <span class="currency">149</span>
+                      <span class="cent">.99</span>
+                      <span class="month">/MON</span>
+                    </span>
+                  </div>
+                  <!--//PRICE END-->
+                </div>
+                <!--//HEAD PRICE DETAIL END-->
+
+                <!--FEATURE LIST START-->
+                <div class="generic_feature_list">
+                  <ul>
+                    <li><span>Project:</span> Unlimited</li>
+                    <li><span>Collab:</span> 5 User</li>
+                    <li><span>Logo:</span> Custom</li>
+                    <li><span>Share:</span> 50000 User</li>
+                    <li><span>Support:</span> 24/7</li>
+                  </ul>
+                </div>
+                <!--//FEATURE LIST END-->
+
+                <!--BUTTON START-->
+                <div class="generic_price_btn clearfix">
+                  <a class="" href="">Sign up</a>
+                </div>
+                <!--//BUTTON END-->
+              </div>
+              <!--//PRICE CONTENT END-->
+            </div>
+            <div class="col-md-4">
+              <!--PRICE CONTENT START-->
+              <div class="generic_content clearfix">
+                <!--HEAD PRICE DETAIL START-->
+                <div class="generic_head_price clearfix">
+                  <!--HEAD CONTENT START-->
+                  <div class="generic_head_content clearfix">
+                    <!--HEAD START-->
+                    <div class="head_bg"></div>
+                    <div class="head">
+                      <span>Platinum</span>
+                    </div>
+                    <!--//HEAD END-->
+                  </div>
+                  <!--//HEAD CONTENT END-->
+
+                  <!--PRICE START-->
+                  <div class="generic_price_tag clearfix">
+                    <span class="price">
+                      <span class="sign">IDR</span>
+                      <span class="currency">299</span>
+                      <span class="cent">.99</span>
+                      <span class="month">/MON</span>
+                    </span>
+                  </div>
+                  <!--//PRICE END-->
+                </div>
+                <!--//HEAD PRICE DETAIL END-->
+
+                <!--FEATURE LIST START-->
+                <div class="generic_feature_list">
+                  <ul>
+                    <li><span>Project:</span> Unlimited</li>
+                    <li><span>Collab:</span> Unlimited</li>
+                    <li><span>Logo:</span> Custom</li>
+                    <li><span>Share:</span> Unlimited</li>
+                    <li><span>Support:</span> 24/7</li>
+                  </ul>
+                </div>
+                <!--//FEATURE LIST END-->
+
+                <!--BUTTON START-->
+                <div class="generic_price_btn clearfix">
+                  <a class="" href="">Sign up</a>
+                </div>
+                <!--//BUTTON END-->
+              </div>
+              <!--//PRICE CONTENT END-->
+            </div>
+          </div>
+          <!--//BLOCK ROW END-->
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-lg-6">
+          <!-- Section Heading-->
+          <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp">
+            <h3>Creative <span> Team INSAPP</span></h3>
+            <p>The saying goes you don't know, so you don't love.</p>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Single Advisor-->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp">
+            <!-- Team Thumb-->
+            <div class="advisor_thumb">
+              <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" />
+              <!-- Social Info-->
+              <div class="social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+            <!-- Team Details-->
+            <div class="single_advisor_details_info">
+              <h6>M Dimas Arya Muhajir</h6>
+              <p class="designation">Founder &amp; CEO</p>
+            </div>
+          </div>
+        </div>
+        <!-- Single Advisor-->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp">
+            <!-- Team Thumb-->
+            <div class="advisor_thumb">
+              <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="" />
+              <!-- Social Info-->
+              <div class="social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+            <!-- Team Details-->
+            <div class="single_advisor_details_info">
+              <h6>Fauziah Reza Oktaviyani</h6>
+              <p class="designation">UI Designer</p>
+            </div>
+          </div>
+        </div>
+        <!-- Single Advisor-->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp">
+            <!-- Team Thumb-->
+            <div class="advisor_thumb">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
+              <!-- Social Info-->
+              <div class="social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+            <!-- Team Details-->
+            <div class="single_advisor_details_info">
+              <h6>Moch. Rizal Efendi</h6>
+              <p class="designation">Developer</p>
+            </div>
+          </div>
+        </div>
+        <!-- Single Advisor-->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp">
+            <!-- Team Thumb-->
+            <div class="advisor_thumb">
+              <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+              <!-- Social Info-->
+              <div class="social-info">
+                <a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+            <!-- Team Details-->
+            <div class="single_advisor_details_info">
+              <h6>Alvin Vikrun Nuha</h6>
+              <p class="designation">Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div style="background-color: rgba(58, 47, 47, 0); background-image: url('assets/img/footer.png'); background-size: cover; background-repeat: no-repeat; height: 366px">
+        <div class="container">
+          <h1 class="text-center" style="font-family: ABeeZee, sans-serif; font-size: 46px; color: rgb(0, 0, 0); margin-top: 37px"><i class="icon ion-android-phone-portrait"></i>Insapp</h1>
+          <hr />
+          <ul class="list-inline" id="text_decoration" style="margin-top: 30px; font-family: ABeeZee, sans-serif">
+            <li class="list-inline-item"><a class="decoration" style="color: rgb(0, 0, 0); font-size: 20px; margin-right: 10px" href="#">Home</a></li>
+            <li class="list-inline-item"><a style="font-size: 20px; color: rgb(0, 0, 0); margin-right: 10px" href="#">Services</a></li>
+            <li class="list-inline-item"><a style="font-size: 20px; color: rgb(0, 0, 0); margin-right: 10px" href="#">About</a></li>
+            <li class="list-inline-item"><a style="color: rgb(0, 0, 0); font-size: 20px; margin-right: 10px" href="#">Terms</a></li>
+            <li class="list-inline-item"><a style="color: rgb(0, 0, 0); font-size: 20px" href="#">Privacy Policy</a></li>
+          </ul>
+          <p class="text-center" style="margin-top: 30px; margin-bottom: 15px">
+            <a style="font-size: 35px; margin-right: 30px" href="#"><i class="fa fa-facebook-square" style="color: rgb(0, 0, 0); margin-right: 0px"></i></a
+            ><a style="font-size: 35px; margin-right: 30px" href="#"><i class="fa fa-instagram" style="color: rgb(0, 0, 0); margin-right: 0px"></i></a
+            ><a style="font-size: 35px; margin-right: 30px" href="#"><i class="icon ion-social-twitter" style="color: rgb(0, 0, 0); margin-right: 2px"></i></a
+            ><a style="font-size: 35px; margin-right: 30px" href="#"><i class="fa fa-github" style="color: rgb(0, 0, 0); margin-right: 0px"></i></a
+            ><a style="font-size: 35px" href="#"><i class="fa fa-google-plus-square" style="color: rgb(0, 0, 0)"></i></a>
+          </p>
+          <p class="text-center" style="color: rgb(193, 184, 184); font-family: ABeeZee, sans-serif; margin-bottom: 23px">Insapp Inc @ 2021</p>
+        </div>
+      </div>
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
-</body>
-
+  </body>
 </html>
